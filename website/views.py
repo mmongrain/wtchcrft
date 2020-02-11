@@ -20,5 +20,6 @@ def index(request):
 
     return render(request, 'website/index.html', {'posts': posts})
 
-
+def bloviator(request):
+    return render(request, 'website/pages/bloviator.html')
 

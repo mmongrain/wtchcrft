@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^(?P<post_id>[0-9]+)/$', views.post, name='post'),
     url(r'^admin/', admin.site.urls),
+    url(r'^bloviator/', views.bloviator),
     url(r'^rss/$', LatestEntriesFeed()),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

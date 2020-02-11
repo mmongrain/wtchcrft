@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Raleway:700');
 
 body.wtchcrft {
-    color: #eee;
+    color: #9f9f99;
     background: black;
     background-image: url("/static/images/zwartevilt.png");
     background-attachment: fixed;
@@ -42,11 +42,19 @@ body.wtchcrft img.logo {
     opacity: 0.1;
 }
 
+body.wtchcrft img.forest {
+    position: fixed;
+    bottom: -10%;
+    width: 100vw;
+    opacity: 0.05;
+    filter: blur(2px);
+}
+
 body.wtchcrft h1,
 body.wtchcrft h2,
 body.wtchcrft h3,
 body.wtchcrft h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Alegraya', sans-serif;
 }
 
 body.wtchcrft h1 {
@@ -57,13 +65,13 @@ body.wtchcrft h1 {
 
 body.wtchcrft a {
     text-decoration: none;
-    color: white;
+    color: #9f9f99;
     border-bottom: 1px dotted #333;
     transition: 300ms all;
 }
 
 body.wtchcrft a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 body.wtchcrft .post img.featured {
