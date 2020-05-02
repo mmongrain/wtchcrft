@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Raleway:700');
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body.wtchcrft {
     color: #9f9f99;
     background: black;
@@ -8,12 +13,10 @@ body.wtchcrft {
     font-family: 'Alegreya', serif;
 }
 
-body.wtchcrft .post {
+body.wtchcrft .post p {
     position: relative;
-    max-width: 700px;
-    width: 100%;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1.5em;
+    padding-left: 20px;
 }
 
 body.wtchcrft .pagination {
@@ -30,24 +33,32 @@ body.wtchcrft .pagination {
 }
 
 body.wtchcrft div.content.container {
-    margin-top: 50vh;
-    margin-left: 25%;
+    margin-right: 5%;
+    margin-bottom: 80vh;
+    margin-left: 20%;
 }
 
-body.wtchcrft img.logo {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 250px;
-    opacity: 0.1;
+body.wtchcrft .logo {
+    margin-bottom: 30vh;
+    height: 100vh;
+    width: 100vw;
+    margin-left: -2.5vw;
+    opacity: 0.08;
+    filter: blur(2px);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 }
 
 body.wtchcrft img.forest {
     position: fixed;
-    bottom: -10%;
-    width: 100vw;
-    opacity: 0.05;
+    bottom: 0;
+    height: 50vh;
+    opacity: 0.08;
     filter: blur(2px);
+    z-index: -1;
+    min-width: 100vw;
 }
 
 body.wtchcrft h1,
@@ -61,29 +72,39 @@ body.wtchcrft h1 {
     margin-bottom: 15px;
     display: inline-block;
     padding-bottom: 5px;
+    font-weight: 100;
+    font-size: 3em;
+    filter: blur(1px);
 }
 
 body.wtchcrft a {
     text-decoration: none;
     color: #9f9f99;
-    border-bottom: 1px dotted #333;
-    transition: 300ms all;
 }
 
-body.wtchcrft a:hover {
-    border-bottom: 2px solid white;
+body.wtchcrft .post {
+    margin-bottom: 30vh;
 }
 
-body.wtchcrft .post img.featured {
+
+body.wtchcrft .post div.image {
     position: absolute;
-    left: -30%;
-    max-width: 25%;
+    height: 200px;
     width: 200px;
-    border-radius: 25px;
-    opacity: 0.75;
-    transition: 300ms all;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    border-radius: 2px;
+    background-size: contain;
+    left: 5%;
+    transition: 1000ms all;
+    z-index: -1;
+    filter: blur(5px);
 }
 
-body.wtchcrft .post img:hover {
-    opacity: 1;
+body.wtchcrft .post div.image:hover {
+    opacity: 0.5;
+}
+
+body.wtchcrft .post .content {
+    padding-top: 32px;
 }

@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
     </head>
 	<body class="wtchcrft">
+        <div style="background-image:url({% static 'images/logo.png' %})" class="logo"></div>
 		<div class="content container">
-			<div class="row">
-				<div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-				</div>
-			</div>
+            {% block content %}
+            {% endblock %}
+            <a href="mailto:web@wtchcrft.com" class="contact">
+                <h1>get in touch</h1>
+            </a>
 		</div>
-        <img src="{% static 'images/logo.png' %}" class="logo"/>
+        <img src="{% static 'images/forest.png' %}" class="forest"/>
 	</body>
 </html>

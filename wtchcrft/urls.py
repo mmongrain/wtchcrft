@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.conf import settings
 from website import views
 from website.feeds import LatestEntriesFeed
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
@@ -26,4 +27,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^bloviator/', views.bloviator),
     url(r'^rss/$', LatestEntriesFeed()),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += staticfiles_urlpatterns()

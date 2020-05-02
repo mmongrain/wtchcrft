@@ -7,13 +7,13 @@
 
     {% for post in posts %}
         <div class="post">
-            <a href="{% url 'post' post.id %}">
-                <h1>{{ post.title }}</h1>
-            </a>
             {% if post.image %}
-            <img class="featured" src="{{ MEDIA_URL}}{{ post.image }}"/>
+            <div class="image" style="background-image:url({{ MEDIA_URL }}{{ post.image }})"></div>
             {% endif %}
             <div class="content">
+                <a href="{% url 'post' post.id %}">
+                    <h1>{{ post.title }}</h1>
+                </a>
                 {{ post.post | markdown }}
             </div>
         </div>

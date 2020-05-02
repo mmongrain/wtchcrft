@@ -22,4 +22,3 @@ def index(request):
 
 def bloviator(request):
     return render(request, 'website/pages/bloviator.html')
-
