@@ -1,4 +1,3 @@
-wtchcrft/settings.py
 *.sock
 wtchcrftenv
 wtchcrftenv/*
