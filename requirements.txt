@@ -2,7 +2,7 @@ asgiref==3.2.3
 Django==3.0.3
 django-markdown-deux==1.0.5
 gunicorn==20.0.4
-markdown2==2.3.8
+markdown2==2.4.0
 Pillow==7.0.0
 pkg-resources==0.0.0
 psycopg2==2.8.4
